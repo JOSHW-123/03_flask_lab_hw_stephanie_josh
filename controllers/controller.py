@@ -7,5 +7,5 @@ def index():
     return render_template('index.html', title='Home', orders=orders)
 
 @app.route('/orders/<index>')
-def index():
-    return 
+def item(index):
+    found_order = [int(float(index))]
